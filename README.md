@@ -46,3 +46,66 @@ Incluye validaciones de entrada, componentes gráficos modernos y conexión a ba
 ### 1. Clonar el repositorio
 ```bash
  https://github.com/pablobrizuela23/sistema-gestion-academica.git
+```
+---
+
+### 2. Abrir el proyecto
+- Abrir en IntelliJ IDEA o NetBeans.
+
+- Configurar el SDK de Java (mínimo JDK 17).
+
+---
+
+### 3. Agregar librerías externas
+### En IntelliJ:
+
+File > Project Structure > Modules > Dependencies > + > JARs or Directories
+
+Seleccionar:
+
+- jcalendar-1.4.jar
+
+- mariadb-java-client-3.2.0.jar
+
+Aplicar cambios.
+
+---
+
+### 4. Configurar la base de datos
+1. Iniciar XAMPP y activar el módulo MySQL.
+(Si no usas XAMPP, asegúrate de tener MariaDB/MySQL corriendo en tu sistema).
+
+2. Crear la base de datos y tablas necesarias:
+
+```bash
+CREATE DATABASE ulp;
+USE ulp;
+
+CREATE TABLE alumno (
+    idAlumno INT AUTO_INCREMENT PRIMARY KEY,
+    dni INT NOT NULL,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    fechaNacimiento DATE,
+    estado BOOLEAN
+);
+
+CREATE TABLE materia (
+    idMateria INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    año INT NOT NULL,
+    estado BOOLEAN
+);
+
+CREATE TABLE inscripcion (
+    idInscripcion INT AUTO_INCREMENT PRIMARY KEY,
+    idAlumno INT,
+    idMateria INT,
+    nota DOUBLE,
+    FOREIGN KEY (idAlumno) REFERENCES alumno(idAlumno),
+    FOREIGN KEY (idMateria) REFERENCES materia(idMateria)
+);
+
+
+```
+
