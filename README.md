@@ -45,4 +45,4 @@ Incluye validaciones de entrada, componentes gráficos modernos y conexión a ba
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/JNZader-Vault/ULP.git
+ https://github.com/pablobrizuela23/sistema-gestion-academica.git
