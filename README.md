@@ -142,8 +142,30 @@ Connection con = DriverManager.getConnection(
 
 ## 📸 Capturas de pantalla
 
-![Interfaz](screenshots/interfaz.png)
-![Gestión de Materias](docs/screenshots/materias.png)
-![Gestión de Inscripciones](docs/screenshots/inscripciones.png)
+![Interfaz](screenshots/interfaz.PNG)
+![Carga de notas](screenshots/seccion-admin-formcarganotas.PNG)
+![Formulario inscripcion](screenshots/seccion-admin-forminscripcion.PNG)
+![Sección alumnos](screenshots/seccion-alumnos.PNG)
+![Sección consultas](screenshots/seccion-consultas.PNG)
+![Sección materia](screenshots/seccion-materia.PNG)
+
+---
+
+## 👨‍💻 Autor
+- Pablo Brizuela
+- Javier Zader
+- Iván Moreno
+- Rocío Lencina
+   
+Proyecto académico de la Universidad de La Punta (ULP).
+
+---
+
+## 🙏 Agradecimientos
+- A la Universidad de La Punta (ULP) por el marco académico.
+
+- A la comunidad de Java por las librerías y soporte.
+
+- A todos los que colaboran en mejorar este proyecto.
 
  
