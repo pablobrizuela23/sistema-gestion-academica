@@ -109,3 +109,41 @@ CREATE TABLE inscripcion (
 
 ```
 
+3. Verifica que el usuario y contraseña de MySQL coincidan con los que usa tu clase Conexion.
+Ejemplo típico:
+
+```bash
+Connection con = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/ulp", "root", ""
+);
+
+
+```
+## ▶️ Uso
+1. Inicia el servidor MySQL desde XAMPP (o directamente MariaDB).
+
+2. Abre el proyecto en IntelliJ.
+
+3. Configura una Run Configuration para ejecutar la clase principal (ejemplo: Main).
+
+4. Ejecuta el programa:
+
+  - Run > Run 'Main'
+
+5. Se abrirá la ventana Swing con las siguientes opciones:
+
+  - Gestión de Alumnos: alta, baja, modificación y búsqueda.
+
+  - Gestión de Materias: administración de materias disponibles.
+
+  - Gestión de Inscripciones: inscripción de alumnos a materias, consulta de inscripciones y eliminación.
+
+---
+
+## 📸 Capturas de pantalla
+
+![Interfaz](screenshots/interfaz.png)
+![Gestión de Materias](docs/screenshots/materias.png)
+![Gestión de Inscripciones](docs/screenshots/inscripciones.png)
+
+ 
